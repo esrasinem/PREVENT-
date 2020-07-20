@@ -1,0 +1,11 @@
+#Define my parameters of the search
+#BUSINESS SEARCH PARAMETERS - EXAMPLE
+PARAMETERS = {'term': 'grocery',
+              'limit': 50,
+              'offset': 50,
+              'radius': 40000,
+              'latitude': '38.637343', 'longitude': '-90.264325'}
+
+#'grocery' can be substituted with 'food banks' , 'botanical gardnens', 'dietitians', 'CSA', etc. 
+
+#the 'latitude' and 'longitude' values can be replaced with coordinates that will cover the region of the Greater St. Louis area, so as to avoid overlap and generating duplicate resources.
