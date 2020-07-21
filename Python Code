@@ -15,7 +15,7 @@ import json
 #Define my API Key, My Endpoint, and My Header
 from pip._vendor import requests
 
-API_KEY = 'enter your api key here'
+API_KEY = 'KxsSVewKgrR_XYCh5QlMlUoGbDnylC0NzZibky9l9HyhNuf05P6d0WNvOzfrRm742W8c0fKjDDwzUIbij7OttTZTD6UCOW5CT2aoPE3-StgI7esc2MUawlIrf5TyXnYx'
 ENDPOINT = 'https://api.yelp.com/v3/businesses/search'
 HEADERS = {'Authorization': 'bearer %s' % API_KEY}
 
@@ -36,6 +36,10 @@ PARAMETERS = {'term': 'grocery',
 
 #substitute 'grocery' for other category names
 #see list of resource categories to populate app 
+#substitute 'latitude' and 'longitude' values with the corresponding Point values in the 'locationpoints.xlsx' document to pull all the resources within the Greater STL region
+#the radii of each point is set at the maximum 'radius' parameter value of 40000 m
+#using the Point values will result in overlapping radii and redundant resources
+#eliminate redundant resources by screening for resource address 
 
 
 #Make a request to the Yelp API
