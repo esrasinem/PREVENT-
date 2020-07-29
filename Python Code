@@ -15,7 +15,7 @@ import json
 #Define my API Key, My Endpoint, and My Header
 from pip._vendor import requests
 
-API_KEY = 'KxsSVewKgrR_XYCh5QlMlUoGbDnylC0NzZibky9l9HyhNuf05P6d0WNvOzfrRm742W8c0fKjDDwzUIbij7OttTZTD6UCOW5CT2aoPE3-StgI7esc2MUawlIrf5TyXnYx'
+API_KEY = 'enter API key here'
 ENDPOINT = 'https://api.yelp.com/v3/businesses/search'
 HEADERS = {'Authorization': 'bearer %s' % API_KEY}
 
